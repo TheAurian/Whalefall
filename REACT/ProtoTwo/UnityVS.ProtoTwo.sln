@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.ProtoTwo.CSharp.Editor", "UnityVS.ProtoTwo.CSharp.Editor.csproj", "{229A26A7-1870-C347-9A08-C1864AC83C59}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.ProtoTwo.CSharp.Plugins", "UnityVS.ProtoTwo.CSharp.Plugins.csproj", "{D2FA3C3D-987D-E8AE-B1EC-439DA200125E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.ProtoTwo.CSharp", "UnityVS.ProtoTwo.CSharp.csproj", "{8AD3E7A9-5895-316C-4628-7FFCD2BF53FB}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{229A26A7-1870-C347-9A08-C1864AC83C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{229A26A7-1870-C347-9A08-C1864AC83C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{229A26A7-1870-C347-9A08-C1864AC83C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{229A26A7-1870-C347-9A08-C1864AC83C59}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2FA3C3D-987D-E8AE-B1EC-439DA200125E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2FA3C3D-987D-E8AE-B1EC-439DA200125E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2FA3C3D-987D-E8AE-B1EC-439DA200125E}.Release|Any CPU.ActiveCfg = Release|Any CPU
