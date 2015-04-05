@@ -52,43 +52,81 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.ProtoTwo.CSharp.Plugins.csproj">
-      <Project>{D2FA3C3D-987D-E8AE-B1EC-439DA200125E}</Project>
-      <Name>UnityVS.ProtoTwo.CSharp.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\ActivateTrigger.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\FOVKick.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\SmoothFollow.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\TimedObjectActivator.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
     <Compile Include="Assets\scripts\EnemyController.cs" />
     <Compile Include="Assets\scripts\GameController.cs" />
     <Compile Include="Assets\scripts\InputController.cs" />
     <Compile Include="Assets\scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Fantasy Skybox FREE\Readme\Readme.txt" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-    <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
-    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-    <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
-    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
-    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
-    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-    <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
-    <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
-    <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+    <None Include="Assets\3rdPartyAssets\Fantasy Skybox FREE\Readme\Readme.txt" />
+    <None Include="Assets\3rdPartyAssets\Monster\shaders\bumpSpecmap.shader" />
+    <None Include="Assets\3rdPartyAssets\Monster\shaders\caveShader.shader" />
+    <None Include="Assets\3rdPartyAssets\Monster\shaders\metalA.shader" />
+    <None Include="Assets\3rdPartyAssets\Monster\shaders\monsterShader.shader" />
+    <None Include="Assets\3rdPartyAssets\Monster\shaders\vertexAnim.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Projectors\Guidelines.txt" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Skyboxes\_skybox info.txt" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
