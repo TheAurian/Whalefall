@@ -20,7 +20,7 @@ namespace UnityStandardAssets.Utility
         // A multiplier adding distance ahead along the route to aim for, based on current speed
 
         [SerializeField] private float lookAheadForSpeedOffset = 10;
-        // The offset ahead only the route for speed adjustments (applied as the rotation of the waypoint target transform)
+        // The offset ahead only the route for speed adjustments (applied as the rotation of the waypoint player transform)
 
         [SerializeField] private float lookAheadForSpeedFactor = .2f;
         // A multiplier adding distance ahead along the route for speed adjustments
@@ -29,7 +29,7 @@ namespace UnityStandardAssets.Utility
         // whether to update the position smoothly along the route (good for curved paths) or just when we reach each waypoint.
 
         [SerializeField] private float pointToPointThreshold = 4;
-        // proximity to waypoint which must be reached to switch target to next waypoint : only used in PointToPoint mode.
+        // proximity to waypoint which must be reached to switch player to next waypoint : only used in PointToPoint mode.
 
         public enum ProgressStyle
         {

@@ -46,15 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\attacksounds.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\breakable.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\breakparts.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\cameraRoot.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\footsounds.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\mace.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\monstercontroller.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\playrandomsound.js" />
-     <Compile Include="Assets\3rdPartyAssets\Monster\scripts\wait&amp;destroy.js" />
      <Compile Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
      <Compile Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
      <Compile Include="Assets\3rdPartyAssets\Standard Assets (Mobile)\Scripts\FollowTransform.js" />

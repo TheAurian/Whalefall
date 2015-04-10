@@ -5,13 +5,13 @@ namespace UnityStandardAssets.Utility
 	public class SmoothFollow : MonoBehaviour
 	{
 
-		// The target we are following
+		// The player we are following
 		[SerializeField]
 		private Transform target;
-		// The distance in the x-z plane to the target
+		// The distance in the x-z plane to the player
 		[SerializeField]
 		private float distance = 10.0f;
-		// the height we want the camera to be above the target
+		// the height we want the camera to be above the player
 		[SerializeField]
 		private float height = 5.0f;
 
@@ -26,7 +26,7 @@ namespace UnityStandardAssets.Utility
 		// Update is called once per frame
 		void LateUpdate()
 		{
-			// Early out if we don't have a target
+			// Early out if we don't have a player
 			if (!target)
 				return;
 
@@ -47,14 +47,14 @@ namespace UnityStandardAssets.Utility
 			var currentRotation = Quaternion.Euler(0, currentRotationAngle, 0);
 
 			// Set the position of the camera on the x-z plane to:
-			// distance meters behind the target
+			// distance meters behind the player
 			transform.position = target.position;
 			transform.position -= currentRotation * Vector3.forward * distance;
 
 			// Set the height of the camera
 			transform.position = new Vector3(transform.position.x ,currentHeight , transform.position.z);
 
-			// Always look at the target
+			// Always look at the player
 			transform.LookAt(target);
 		}
 	}

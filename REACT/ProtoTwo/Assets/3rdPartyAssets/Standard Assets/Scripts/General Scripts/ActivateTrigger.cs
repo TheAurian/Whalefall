@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class ActivateTrigger : MonoBehaviour {
 	public enum Mode {
-		Trigger   = 0, // Just broadcast the action on to the target
-		Replace   = 1, // replace target with source
-		Activate  = 2, // Activate the target GameObject
+		Trigger   = 0, // Just broadcast the action on to the player
+		Replace   = 1, // replace player with source
+		Activate  = 2, // Activate the player GameObject
 		Enable    = 3, // Enable a component
-		Animate   = 4, // Start animation on target
-		Deactivate= 5 // Decativate target GameObject
+		Animate   = 4, // Start animation on player
+		Deactivate= 5 // Decativate player GameObject
 	}
 
 	/// The action to accomplish

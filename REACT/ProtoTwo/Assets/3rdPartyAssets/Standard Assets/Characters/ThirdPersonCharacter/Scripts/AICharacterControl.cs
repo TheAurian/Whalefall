@@ -9,7 +9,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     {
         public NavMeshAgent agent { get; private set; } // the navmesh agent required for the path finding
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
-        public Transform target; // target to aim for
+        public Transform target; // player to aim for
 
         // Use this for initialization
         private void Start()

@@ -37,32 +37,10 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        ////player attacks with a rate
-        //attackTimer += Time.deltaTime;
 
-        //if (input.GetSweep_R() && attackTimer >= attackRate)
-        //{
-        //    Debug.Log("Toroa sweeping right!");
-        //    anim.SetTrigger("tSweepRight");
-        //    attackTimer = 0;
-        //}
-        //else if (input.GetStab() && attackTimer >= attackRate)
-        //{
-        //    Debug.Log("Toroa stabbung!");
-        //    anim.SetTrigger("tStab");
-        //    attackTimer = 0;
-        //}
-        //else if (input.GetSweep_L())
-        //{
-        //    anim.SetBool("bInFightStance", true);
-        //}
     }
 
-    void Attack()
-    {
-        Debug.Log("Toroa has attacked!");
-        anim.SetTrigger("tSweepRight");
-    }
+
 
     void FixedUpdate()
     {
@@ -130,6 +108,12 @@ public class PlayerController : MonoBehaviour {
 
         //turn rigidbody ta face direction,and don't overshoot when on slow machines
         playerRigidBody.MoveRotation(Quaternion.Lerp(playerRigidBody.rotation, targetRotation, Mathf.Min(turnSpeed*Time.deltaTime,1)));
+    }
+
+    void Attack()
+    {
+        Debug.Log("Toroa has attacked!");
+        anim.SetTrigger("tSweepRight");
     }
 
 }
