@@ -1,18 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : ActorController {
 
     public Transform spawnLocation;
     public float attackRate;
 
     Vector3 currentDirection;
-    Rigidbody playerRigidBody;
     Vector3 movement; //Vector to store direction of player's movement
     public float speed; //speed that player will move at
-    Animator anim;
     float turnSpeed;
-    bool bIsDead;
     float attackTimer;
     InputController input;
 
@@ -20,7 +17,7 @@ public class PlayerController : MonoBehaviour {
     void Awake()
     {
         //get player character components
-        playerRigidBody = GetComponent<Rigidbody>();
+        thisRigidBody = GetComponent<Rigidbody>();
         //speed = 6f;
         turnSpeed = 20f;
         bIsDead = false;
@@ -70,10 +67,15 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("Toroa sweeping right!");
             anim.SetTrigger("tSweepRight");
             attackTimer = 0;
+            EnemyController enemyHealth = collider.GetComponent<EnemyController>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(20);
+            }
         }
         else if (input.GetStab() && attackTimer >= attackRate)
         {
-            Debug.Log("Toroa stabbung!");
+            Debug.Log("Toroa stabbing!");
             anim.SetTrigger("tStab");
             attackTimer = 0;
         }
@@ -96,7 +98,7 @@ public class PlayerController : MonoBehaviour {
         movement = movement.normalized * speed * Time.deltaTime;
 
         //add movment vector to current position
-        playerRigidBody.MovePosition(transform.position + movement);
+        thisRigidBody.MovePosition(transform.position + movement);
 
     }
 
@@ -107,7 +109,7 @@ public class PlayerController : MonoBehaviour {
         Quaternion targetRotation = Quaternion.LookRotation(currentDirection);
 
         //turn rigidbody ta face direction,and don't overshoot when on slow machines
-        playerRigidBody.MoveRotation(Quaternion.Lerp(playerRigidBody.rotation, targetRotation, Mathf.Min(turnSpeed*Time.deltaTime,1)));
+        thisRigidBody.MoveRotation(Quaternion.Lerp(thisRigidBody.rotation, targetRotation, Mathf.Min(turnSpeed * Time.deltaTime, 1)));
     }
 
     void Attack()

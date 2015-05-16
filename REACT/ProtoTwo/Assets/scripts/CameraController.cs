@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class CameraController : MonoBehaviour 
+public class CameraController : ActorController 
 {
 	public Transform player;            // The position that that camera will be following.
 	public float smoothing = 5f;        // The speed with which the camera will be following.

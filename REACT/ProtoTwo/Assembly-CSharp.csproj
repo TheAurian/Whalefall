@@ -92,6 +92,7 @@
      <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\YierraAI.cs" />
+     <Compile Include="Assets\scripts\ActorController.cs" />
      <Compile Include="Assets\scripts\CameraController.cs" />
      <Compile Include="Assets\scripts\EnemyController.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />
