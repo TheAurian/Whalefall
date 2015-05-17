@@ -8,7 +8,9 @@ public class EnemyController : ActorController
     public float attackRate;
 
     Vector3 currentDirection;
+    Transform player;
     Vector3 movement; //Vector to store direction of player's movement
+    NavMeshAgent navMesh;
     public float speed; //speed that player will move at
     float turnSpeed;
     float attackTimer;
@@ -25,6 +27,8 @@ public class EnemyController : ActorController
         anim = GetComponent<Animator>();
         attackTimer = 0;
         currentHealth = initialHealth;
+        navMesh = GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
 	// Use this for initialization
@@ -34,7 +38,7 @@ public class EnemyController : ActorController
 	
 	// Update is called once per frame
 	void Update () {
-	    
+        Move();
 	}
 
     void FixedUpdate()
@@ -44,7 +48,8 @@ public class EnemyController : ActorController
     }
 
     void Move(){
-
+        //transform.position = Vector3.Lerp(transform.position, )
+        navMesh.SetDestination(player.position);
     }
 
     void Turn()
